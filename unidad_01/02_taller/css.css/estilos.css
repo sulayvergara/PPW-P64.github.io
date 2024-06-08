@@ -3,13 +3,37 @@ h1{
     font-style: italic;
     text-shadow: 2px 2px 5px rgba(0 ,0 ,0 , 0.5);
 }
-a{
 
+a{
+} 
+
+li.enlace{
+  display: inline-block;
+}    
+.conteiner-imagen{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
 }
+.imagen{
+    width: 400px;
+}
+
+
 .caja-enlace{
     display: block;
     width: 200 px;
     border: 1px solid lightblue;
     padding: 5px;
     margin: 5px;
+}
+.conteiner-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+}
+.conteiner-footer{
+    font-size: 20px;
+    background-color: black;
 }
