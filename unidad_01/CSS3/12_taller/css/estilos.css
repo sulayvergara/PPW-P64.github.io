@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 100px 50px 1fr 50px; /* Define cuatro filas */
+    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-areas: 
+        "header"
+        "menu"
+        "content"
+        "footer"; /* Define las áreas de la cuadrícula */
+    grid-gap: 5px;
+    height: 100vh;
+}
+
+.item {
+    background-color: dodgerblue; /* Color de fondo común */
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.header {
+    grid-area: header;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.rectangle {
+    width: 60%;
+    height: 200px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px; 
+    border: 1px solid black;
+}
+
+.squares {
+    display: flex;
+    justify-content: space-between;
+    width: 60%; 
+}
+
+.square {
+    width: 34%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+.square.gray {
+    background-color: gray;
+}
+
+.square.blue {
+    background-color: blue;
+}
+
+.square.pink {
+    background-color: pink;
+    color: black; 
+}
+
+.footer {
+    grid-area: footer;
+}
