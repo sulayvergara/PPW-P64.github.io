@@ -40,7 +40,7 @@
     padding: 10px;
 }
 
-.rectangle {
+.rectangulo {
     width: 60%;
     height: 200px;
     background-color: yellow;
@@ -51,13 +51,13 @@
     border: 1px solid black;
 }
 
-.squares {
+.cuadrados {
     display: flex;
     justify-content: space-between;
     width: 60%; 
 }
 
-.square {
+.cuadrado {
     width: 34%;
     height: 100px;
     display: flex;
@@ -68,15 +68,15 @@
     border: 1px solid black;
 }
 
-.square.gray {
+.cuadrado.gray {
     background-color: gray;
 }
 
-.square.blue {
+.cuadrado.blue {
     background-color: blue;
 }
 
-.square.pink {
+.cuadrado.pink {
     background-color: pink;
     color: black; 
 }
