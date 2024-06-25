@@ -6,19 +6,24 @@
 
 .container {
     display: grid;
+<<<<<<< HEAD:unidad_01/CSS3/12_taller/css/estilos.css
     grid-template-rows: 100px 50px 2fr 50px; /* Define cuatro filas */
     grid-template-columns: 1fr; /* Una sola columna */
+=======
+    grid-template-rows: 100px 50px 1fr 50px; 
+    grid-template-columns: 1fr; 
+>>>>>>> 3668d6d130357269a40471c241164129ce76dd47:unidad_01/css/CSS3/12_taller/css/estilos.css
     grid-template-areas: 
         "header"
         "menu"
         "content"
-        "footer"; /* Define las áreas de la cuadrícula */
+        "footer"; 
     grid-gap: 5px;
     height: 100vh;
 }
 
 .item {
-    background-color: dodgerblue; /* Color de fondo común */
+    background-color: dodgerblue; 
     padding: 10px;
     border: 1px solid black;
     text-align: center;
@@ -42,10 +47,15 @@
     padding: 10px;
 }
 
-.rectangle {
+.rectangulo {
     width: 60%;
+<<<<<<< HEAD:unidad_01/CSS3/12_taller/css/estilos.css
     height: 150px;
     background-color: yellow;
+=======
+    height: 200px;
+    background-color: rgba(255, 255, 0, 0.986);
+>>>>>>> 3668d6d130357269a40471c241164129ce76dd47:unidad_01/css/CSS3/12_taller/css/estilos.css
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,13 +63,13 @@
     border: 1px solid black;
 }
 
-.squares {
+.cuadrados {
     display: flex;
     justify-content: space-between;
     width: 60%; 
 }
 
-.square {
+.cuadrado {
     width: 34%;
     height: 50px;
     display: flex;
@@ -70,6 +80,7 @@
     border: 1px solid black;
 }
 
+<<<<<<< HEAD:unidad_01/CSS3/12_taller/css/estilos.css
 .square.gray {
     background-color: rgb(219, 217, 217);
 }
@@ -80,6 +91,18 @@
 
 .square.pink {
     background-color: rgb(235, 80, 227);
+=======
+.cuadrado.gray {
+    background-color: rgb(80, 80, 80);
+}
+
+.cuadrado.blue {
+    background-color: rgb(0, 0, 255);
+}
+
+.cuadrado.pink {
+    background-color: rgb(247, 92, 213);
+>>>>>>> 3668d6d130357269a40471c241164129ce76dd47:unidad_01/css/CSS3/12_taller/css/estilos.css
     color: black; 
 }
 
