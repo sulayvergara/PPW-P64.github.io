@@ -21,6 +21,8 @@
     background-color: dodgerblue; /* Color de fondo común */
     padding: 10px;
     border: 1px solid black;
+    text-align: center;
+    color: white;
 }
 
 .header {
@@ -73,7 +75,7 @@
 }
 
 .square.blue {
-    background-color: rgba(2, 120, 255, 0);
+    background-color: #1569b7;
 }
 
 .square.pink {
