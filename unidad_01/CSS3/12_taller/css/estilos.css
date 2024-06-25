@@ -6,7 +6,7 @@
 
 .container {
     display: grid;
-    grid-template-rows: 100px 50px 1fr 50px; /* Define cuatro filas */
+    grid-template-rows: 100px 50px 2fr 50px; /* Define cuatro filas */
     grid-template-columns: 1fr; /* Una sola columna */
     grid-template-areas: 
         "header"
@@ -42,12 +42,12 @@
 
 .rectangle {
     width: 60%;
-    height: 200px;
+    height: 150px;
     background-color: yellow;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0px; 
+    margin-bottom: 2px; 
     border: 1px solid black;
 }
 
@@ -59,7 +59,7 @@
 
 .square {
     width: 34%;
-    height: 100px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,18 +69,19 @@
 }
 
 .square.gray {
-    background-color: gray;
+    background-color: rgb(219, 217, 217);
 }
 
 .square.blue {
-    background-color: blue;
+    background-color: rgba(2, 120, 255, 0);
 }
 
 .square.pink {
-    background-color: pink;
+    background-color: rgb(235, 80, 227);
     color: black; 
 }
 
 .footer {
     grid-area: footer;
+
 }
