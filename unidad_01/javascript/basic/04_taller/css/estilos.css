@@ -65,7 +65,7 @@
 }
 
 #opcion_01 {
-    background-color: lawngreen;
+    background-color: rgba(0, 214, 252, 0.575);
     z-index: 2;
     -ms-flex-item-align: center;
 }
