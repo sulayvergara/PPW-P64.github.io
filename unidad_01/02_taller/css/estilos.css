@@ -33,7 +33,7 @@ li.enlace{
 .caja-enlace{
     display: flex;
     width: 300px;
-    border: 1px solid rgb(218, 39, 39);
+    border: 1px solid rgb(87, 47, 179);
     padding: 5px;
     margin: 5px;
     justify-content: center;

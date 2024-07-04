@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
     links.forEach(function(link) {
         link.addEventListener('mouseover', function() {
             // Cambiar el color y el tamaño al pasar el ratón
-            link.style.backgroundColor = '#007BFF'; // Cambiar a azul
-            link.style.transform = 'scale(1.1)'; // Aumentar el tamaño
+            link.style.backgroundColor = '#B0E0E6'; // Cambiar a azul
+            link.style.transform = 'scale(1.03)'; // Aumentar el tamaño
         });
 
         link.addEventListener('mouseout', function() {
