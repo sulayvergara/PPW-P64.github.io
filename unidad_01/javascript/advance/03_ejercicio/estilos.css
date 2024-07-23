@@ -1,0 +1,48 @@
+.container{
+    display: grid;
+    grid-template: 150px 1fr 50px /200px  1fr;
+    grid-template-areas: "header header" "left content" " footer footer";
+    grid-gap: 5px;
+    height: 100vh;
+}
+.item {
+    background-color: rgb(122, 180, 238);
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+.header{
+    grid-area: header;
+}
+
+.left{
+    grid-area: left;
+
+}
+
+.content{
+    grid-area: content;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer{
+    grid-area: footer;
+
+}
+.item-button {
+    font-size: 15px;
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+input {
+    font-size: 15px;
+    width: 160px;
+}
+
+.imagen{
+    display: flex;
+    justify-content: center;
+    margin: 1px solid lightgray;
+}
