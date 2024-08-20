@@ -6,22 +6,18 @@ const req_string = {
     required: true
 }
 
-const req_date = {
-    type: Date,
-    required: true
-}
-
-const usuario_schema = new schema({
-    usuario: req_string,
-    clave: req_string,
+const ciudad_schema = new schema({
     nombre: req_string,
-    apellido: req_string,
-    fecha_nacimiento: req_date,
-    fecha_registro: req_date,
+    pais: {
+        type: schema.ObjectId,
+        ref: 'Pais',
+        required:true
+    },
+    fecha_creacion: Date,
     fecha_actualizacion: Date
 }, {
     timestamps: { createdAt: 'fecha_creacion', updatedAt: 'fecha_actualizacion' }
 })
 
-const model = mongoose.model('Usuario', usuario_schema)
+const model = mongoose.model('Ciudad', ciudad_schema)
 module.exports = model
