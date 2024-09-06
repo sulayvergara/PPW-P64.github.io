@@ -1,16 +1,17 @@
+
 const storage = require('./storage')
 
-function insertar_usuario( dato ) {
+function insertar_ciudad( dato ) {
     return new Promise( (resolve, reject) => {
-        if (!dato) {
-            reject( 'No existen datos' )
+        if (!dato.nombre ) {
+            reject( 'Los datos se encuentran incompletos.' )
         } else {
             resolve( storage.insertar( dato ) )
         }
     } )
 }
 
-function obtener_usuario( dato ) {
+function obtener_ciudad( dato ) {
     return new Promise( (resolve, reject) => {
         if (!dato) {
             reject( 'No existen datos' )
@@ -19,21 +20,36 @@ function obtener_usuario( dato ) {
         }
     } )
 }
-function actualizar_usuario( dato ) {
-    return  new Promise( (resolve, reject) => {
-        let usuario={
-            usuario: dato.usuario,
-            clave: dato.clave,
-            nombre: dato.nombre,
-            apellido: dato.apellido,
-            fecha_nacimiento: dato.fecha_nacimiento
+
+function actualizar_ciudad(dato) {
+    return new Promise((resolve, reject) => {
+        if (!dato._id ||!dato.nombre || !dato.pais) {
+            reject('Los datos se encuentran incompletos.');
+        } else {
+            let ciudad = {
+                _id: dato._id,
+                nombre: dato.nombre,
+                pais: dato.pais
+            };
+            console.log(ciudad);
+            resolve(storage.actualizar(ciudad));
         }
-    } )
+    });
+}
+
+function eliminar_ciudad(dato) {
+    return new Promise((resolve, reject) => {
+        if (!dato.nombre) {
+            reject('Los datos se encuentran incompletos.');
+        } else {
+            resolve(storage.eliminar(dato));
+        }
+    });
 }
 
 module.exports = {
-    insertar_usuario,
-    obtener_usuario,
-    actualizar_usuario,
-    eliminar_usuario
+    insertar_ciudad,
+    obtener_ciudad,
+    actualizar_ciudad,
+    eliminar_ciudad
 }
